@@ -502,10 +502,10 @@
       "readOnly": true,
       "writeOnly": false
     },
-    "irradiation_value": {
+    "irradiance": {
       "observable": false,
       "properties": {
-        "irradiation_value": {
+        "irradiance": {
           "schema:dateModified": {
             "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
           },
@@ -513,7 +513,7 @@
           "@type": [
             "http://schema.org/value"
           ],
-          "title": "Irradiation value",
+          "title": "Irradiance",
           "description": "The power density of the radiation incident on a surface",
           "type": "number",
           "unit": "W/m²",
@@ -535,14 +535,14 @@
       },
       "required": [
         "time",
-        "irradiation_value"
+        "irradiance"
       ],
       "forms": [
         {
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/irradiation_value",
+          "href": "things/Resol-Midi-Pro/properties/irradiance",
           "contentType": "application/json"
         }
       ],
