@@ -1,0 +1,560 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    {
+      "schema": "http://schema.org/",
+      "iot": "http://iotschema.org/",
+      "http": "http://iotschema.org/protocol/http",
+      "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "id": "things/Resol-Midi-Pro",
+  "title": "Resol Midi Pro Solar Controller",
+  "security": [
+    "basic_sc"
+  ],
+  "@type": [
+    "iot:Sensor"
+  ],
+  "description": "",
+  "version": {
+    "instance": "0.1"
+  },
+  "created": "2024-08-22T15:00:00.748Z",
+  "modified": "2024-08-22T15:00:00.748Z",
+  "support": "https://www.fh-dortmund.de/de/fb/10/ikt/index.php",
+  "base": "things/Resol-Midi-Pro",
+  "properties": {
+    "collectorTemperature1": {
+      "observable": false,
+      "properties": {
+        "collectorTemperature": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Solar panel temperature",
+          "description": "Temperature measured by sensor on the solar panels",
+          "type": "number",
+          "unit": "°C",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "collectorTemperature"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/collectorTemperature/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Temperature of solar panels",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "collectorTemperature2": {
+      "observable": false,
+      "properties": {
+        "116493522678_2_power": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Collector temperature 2",
+          "description": "Temperature measured by sensor 2",
+          "type": "number",
+          "unit": "°C",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "collectorTemperature2"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/collectorTemperature2/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Temperature measured by sensor 2 on the second collector channel",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "storageTemperature1": {
+      "observable": false,
+      "properties": {
+        "storageTemperature1": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Storage temperature 1",
+          "description": "Temperature measured in first storage medium",
+          "type": "number",
+          "unit": "°C",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "storageTemperature1"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature1/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Temperature measured in first storage medium",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "storageTemperature2": {
+      "observable": false,
+      "properties": {
+        "storageTemperature2": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Storage temperature 2",
+          "description": "Temperature measured in second storage medium",
+          "type": "number",
+          "unit": "°C",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "storageTemperature2"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature2/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Temperature measured in second storage medium",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "storageTemperature3": {
+      "observable": false,
+      "properties": {
+        "storageTemperature3": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Storage temperature 3",
+          "description": "Temperature measured in third storage medium",
+          "type": "number",
+          "unit": "°C",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "storageTemperature3"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature3/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Temperature measured in third storage medium",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "storageTemperature4": {
+      "observable": false,
+      "properties": {
+        "storageTemperature4": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Storage temperature 4",
+          "description": "Temperature measured in fourth storage medium",
+          "type": "number",
+          "unit": "°C",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "storageTemperature4"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature4/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Temperature measured in fourth storage medium",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "relay1_speed": {
+      "observable": false,
+      "properties": {
+        "relay1_speed": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Relay 1 speed",
+          "description": "Relative speed of relay 1",
+          "type": "number",
+          "unit": "%",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "relay1_speed"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/relay1_speed/",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Relative speed of relay 1",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "relay2_speed": {
+      "observable": false,
+      "properties": {
+        "relay2_speed": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Relay 2 speed",
+          "description": "Relative speed of relay 2",
+          "type": "number",
+          "unit": "%",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "relay2_speed"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/relay2_speed",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Relative speed of relay 2",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "relay3_speed": {
+      "observable": false,
+      "properties": {
+        "relay3_speed": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Relay 3 speed",
+          "description": "Relative speed of relay 3",
+          "type": "number",
+          "unit": "%",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "relay3_speed"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/relay3_speed",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "Relative speed of relay 3",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    },
+    "irradiation_value": {
+      "observable": false,
+      "properties": {
+        "irradiation_value": {
+          "schema:dateModified": {
+            "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
+          },
+          "instanceOf": "org.ict.model.wot.dataschema.NumberSchema",
+          "@type": [
+            "http://schema.org/value"
+          ],
+          "title": "Irradiation value",
+          "description": "The power density of the radiation incident on a surface",
+          "type": "number",
+          "unit": "W/m²",
+          "readOnly": true,
+          "writeOnly": false
+        },
+        "time": {
+          "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457",
+          "instanceOf": "org.ict.model.wot.dataschema.StringSchema",
+          "@type": [
+            "http://schema.org/DateTime"
+          ],
+          "title": "Date time",
+          "description": "The date time in ISO 8601 format",
+          "type": "string",
+          "readOnly": true,
+          "writeOnly": false
+        }
+      },
+      "required": [
+        "time",
+        "irradiation_value"
+      ],
+      "forms": [
+        {
+          "op": [
+            "readproperty"
+          ],
+          "href": "things/Resol-Midi-Pro/properties/irradiation_value",
+          "contentType": "application/json"
+        }
+      ],
+      "instanceOf": "org.ict.model.wot.dataschema.ObjectSchema",
+      "@type": [
+        "TODO"
+      ],
+      "description": "The power density of the radiation incident on a surface",
+      "type": "object",
+      "readOnly": true,
+      "writeOnly": false
+    }
+  },
+  "securityDefinitions": {}
+}
