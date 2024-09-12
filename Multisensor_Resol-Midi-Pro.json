@@ -28,7 +28,7 @@
     "collectorTemperature1": {
       "observable": false,
       "properties": {
-        "collectorTemperature": {
+        "collectorTemperature1": {
           "schema:dateModified": {
             "@id": "urn:2acd0b1e-f441-49b1-a3eb-8316ff4fc457"
           },
@@ -58,14 +58,14 @@
       },
       "required": [
         "time",
-        "collectorTemperature"
+        "collectorTemperature1"
       ],
       "forms": [
         {
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/collectorTemperature/",
+          "href": "things/Resol-Midi-Pro/properties/collectorTemperature1",
           "contentType": "application/json"
         }
       ],
@@ -118,7 +118,7 @@
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/collectorTemperature2/",
+          "href": "things/Resol-Midi-Pro/properties/collectorTemperature2",
           "contentType": "application/json"
         }
       ],
@@ -171,7 +171,7 @@
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/storageTemperature1/",
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature1",
           "contentType": "application/json"
         }
       ],
@@ -224,7 +224,7 @@
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/storageTemperature2/",
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature2",
           "contentType": "application/json"
         }
       ],
@@ -277,7 +277,7 @@
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/storageTemperature3/",
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature3",
           "contentType": "application/json"
         }
       ],
@@ -330,7 +330,7 @@
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/storageTemperature4/",
+          "href": "things/Resol-Midi-Pro/properties/storageTemperature4",
           "contentType": "application/json"
         }
       ],
@@ -383,7 +383,7 @@
           "op": [
             "readproperty"
           ],
-          "href": "things/Resol-Midi-Pro/properties/relay1_speed/",
+          "href": "things/Resol-Midi-Pro/properties/relay1_speed",
           "contentType": "application/json"
         }
       ],
@@ -513,7 +513,7 @@
           "@type": [
             "http://schema.org/value"
           ],
-          "title": "Irradiance",
+          "title": "irradiance",
           "description": "The power density of the radiation incident on a surface",
           "type": "number",
           "unit": "W/m²",
